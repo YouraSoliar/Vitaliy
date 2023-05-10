@@ -34,7 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_margin="20dp"
-        android:text="One more beer"
+        android:text="One more Beer"
         android:gravity="center"
         android:textSize="30sp"
         android:textStyle="bold"

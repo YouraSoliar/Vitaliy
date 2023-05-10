@@ -7,4 +7,49 @@
     android:background="@color/white"
     tools:context=".GreetingActivity">
 
+    <ImageView
+        android:id="@+id/imageViewGay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:src="@drawable/gay"/>
+
+    <TextView
+        android:id="@+id/textViewSecret"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textColor="@color/white"
+        android:text="GAY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewGreeting"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="Вітаємо тебе всі разOм. Бажаю щоб ніхто тебе не одурманив гіпнозОм, а мчав до своєї мети немов паровозОм. Щоб всі слідували за твоїм наказОм, а як не то най катаються гімновозОм!!!!"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPeoples"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Тебе вітали:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGreeting" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

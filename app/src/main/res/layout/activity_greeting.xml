@@ -52,4 +52,73 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewGreeting" />
 
+    <ImageView
+        android:id="@+id/imageViewYurii"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="1dp"
+        android:src="@drawable/yurii"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewTanya"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPeoples" />
+
+    <ImageView
+        android:id="@+id/imageViewTanya"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/tanya"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewOlia"
+        app:layout_constraintStart_toEndOf="@+id/imageViewYurii"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPeoples" />
+
+    <ImageView
+        android:id="@+id/imageViewOlia"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewNazar"
+        app:layout_constraintStart_toEndOf="@+id/imageViewTanya"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPeoples" />
+
+    <ImageView
+        android:id="@+id/imageViewNazar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewOlia"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPeoples" />
+
+
+    <ImageView
+        android:id="@+id/imageViewAndriy"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="1dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewIvanka"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewYurii" />
+
+    <ImageView
+        android:id="@+id/imageViewIvanka"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewAlina"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAndriy"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewYurii" />
+
+    <ImageView
+        android:id="@+id/imageViewAlina"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewNone"
+        app:layout_constraintStart_toEndOf="@+id/imageViewIvanka"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewYurii" />
+
+    <ImageView
+        android:id="@+id/imageViewNone"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAlina"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewYurii" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

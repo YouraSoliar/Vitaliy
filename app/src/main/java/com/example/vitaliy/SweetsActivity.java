@@ -3,7 +3,9 @@ package com.example.vitaliy;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ActionBar;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -38,22 +40,26 @@ public class SweetsActivity extends AppCompatActivity {
         imageViewFullSweets.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 imageViewFullSweets.setVisibility(View.GONE);
                 imageViewHalfSweets.setVisibility(View.VISIBLE);
                 imageViewLastSweets.setVisibility(View.GONE);
                 imageViewEmptySweets.setVisibility(View.GONE);
                 textViewAgain.setVisibility(View.GONE);
+
             }
         });
 
         imageViewHalfSweets.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 imageViewFullSweets.setVisibility(View.GONE);
                 imageViewHalfSweets.setVisibility(View.GONE);
                 imageViewLastSweets.setVisibility(View.VISIBLE);
                 imageViewEmptySweets.setVisibility(View.GONE);
                 textViewAgain.setVisibility(View.GONE);
+
             }
         });
 
@@ -65,6 +71,7 @@ public class SweetsActivity extends AppCompatActivity {
                 imageViewLastSweets.setVisibility(View.GONE);
                 imageViewEmptySweets.setVisibility(View.VISIBLE);
                 textViewAgain.setVisibility(View.VISIBLE);
+
             }
         });
 

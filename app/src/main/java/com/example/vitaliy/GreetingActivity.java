@@ -25,6 +25,7 @@ public class GreetingActivity extends AppCompatActivity {
     private ImageView imageViewAndriy;
     private ImageView imageViewIvanka;
     private ImageView imageViewAlina;
+    private ImageView imageViewMisha;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +45,7 @@ public class GreetingActivity extends AppCompatActivity {
         imageViewAndriy = findViewById(R.id.imageViewAndriy);
         imageViewIvanka = findViewById(R.id.imageViewIvanka);
         imageViewAlina = findViewById(R.id.imageViewAlina);
+        imageViewMisha = findViewById(R.id.imageViewMisha);
 
         imageViewGay.setVisibility(View.GONE);
         count = 0;
@@ -57,6 +59,15 @@ public class GreetingActivity extends AppCompatActivity {
                     textViewSecret.setVisibility(View.GONE);
                     textViewGreeting.setVisibility(View.GONE);
                     textViewPeoples.setVisibility(View.GONE);
+
+                    imageViewMisha.setVisibility(View.GONE);
+                    imageViewYurii.setVisibility(View.GONE);
+                    imageViewTanya.setVisibility(View.GONE);
+                    imageViewOlia.setVisibility(View.GONE);
+                    imageViewNazar.setVisibility(View.GONE);
+                    imageViewIvanka.setVisibility(View.GONE);
+                    imageViewAlina.setVisibility(View.GONE);
+                    imageViewAndriy.setVisibility(View.GONE);
                 }
             }
         });
@@ -101,6 +112,13 @@ public class GreetingActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(GreetingActivity.this, "Аліна", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        imageViewMisha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(GreetingActivity.this, "Михасик", Toast.LENGTH_SHORT).show();
             }
         });
     }
